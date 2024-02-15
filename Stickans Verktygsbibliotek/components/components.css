@@ -7,13 +7,14 @@
     --accent-color-light: #5CBACC;
     --dark-gray-color: #241C15;
     --light-text-color: #91784f;
-    --screaming-red-color: #FF0000;
-    --yes-green-color: #20EF20;
+    --screaming-red-color: #DA4141;
+    --yes-green-color: #6bf86b;
 }
 
 /* Font sytles*/
 
 h1 {
+
     padding-top: 2rem;
     text-align: center;
     font-size: 26px;
@@ -32,13 +33,13 @@ p {
     font-weight: 500;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    color: var(--light-text-color)
+    color: var(--dark-gray-color)
 }
 
 /*header top*/
 
 .header-dark {
-    background-color: #120B2A;
+    background-color: var(--primary-color);
 }
 
 .navigation {
@@ -64,16 +65,16 @@ p {
     padding: 0.3rem;
 }
 
-/*informations cards*/
+/*information cards*/
 
 .card {
     margin: 1rem;
-    border: 0.2px solid #120B2A;
-    padding: 1rem 2rem;
+    border: 0.2px solid var(--dark-gray-color);
+    padding: 1rem;
     border-radius: 0.2rem;
 
 
-    & .center-bitch {
+    & .layout-center {
         display: flex;
         justify-content: center;
 
@@ -81,7 +82,7 @@ p {
             width: 47%;
         }
 
-        & .big-product-picture {
+        & .product-picture {
             width: 100%;
         }
     }
@@ -96,19 +97,19 @@ p {
         }
 
         & .status__yes {
-            background-color: #20EF20;
-            border: 0.3rem solid #20EF20;
+            background-color: var(--yes-green-color);
+            border: 0.3rem solid var(--yes-green-color);
             border-radius: 50%;
-            color: #241C15;
+            color: var(--dark-gray-color);
         }
 
         & .status__no {
             padding: 0.2rem 0rem;
             font-weight: 500;
-            background-color: #FF0000;
-            border: 0.3rem solid #FF0000;
+            background-color: var(--screaming-red-color);
+            border: 0.3rem solid var(--screaming-red-color);
             border-radius: 50%;
-            color: #241C15;
+            color: var(--dark-gray-color);
         }
     }
 
@@ -133,7 +134,7 @@ p {
 .cancel {
     padding-top: 0.7rem;
     text-align: center;
-    color: #FF0000;
+    color: var(--screaming-red-color);
     background-color: var(--primary-color);
 
 }
@@ -141,19 +142,26 @@ p {
 .confirm {
     padding-top: 0.7rem;
     text-align: center;
-    color: #20EF20;
+    color: var(--yes-green-color);
     background-color: var(--primary-color);
     margin-bottom: 0;
 }
 
 
 .reserved {
-    background-color: var(--accent-color-light);
-    color: var(--accent-color-dark);
+    background-color: var(--secondary-color);
+    color: var(--screaming-red-color);
+    border-style: solid;
+    border-color: var(--screaming-red-color);
+    border-radius: 2px;
+}
+
+.return-btn {
+    background-color: var(--primary-color);
+    color: var(--accent-color-light);
 }
 
 /*input*/
-
 input {
     font-family: 'inter', sans-serif;
     margin-bottom: 0.3rem;
@@ -167,12 +175,10 @@ input {
 
 input::placeholder {
     font-weight: bold;
-    color:#241C15;
-  }
+    color: var(--dark-gray-color);
+}
 
-  /*footer*/
-
-
+/*footer*/
 footer {
     margin-top: 42px;
     height: 188px;

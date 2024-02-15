@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mina sidor</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/components/components.css">
 </head>
+
 <body>
     <main>
         <section class="header-dark">
@@ -17,14 +19,16 @@
 
         <article class="navigation">
             <a href="/index.html">Verktyg</a>
-            <a href="/HTML/profil.html">Profil</a>
-            <a href="/HTML/kassa.html">Kassa</a>
+            <a href="/HTML/profil.html">Mina sidor</a>
+            <a href="/HTML/kassa.html">Checka ut</a>
         </article>
 
         <section class="header-page">
-        <h1 class="sub-title">Profil</h1>
+            <h1 class="sub-title">Mina sidor</h1>
         </section>
-
+        <article class="title">
+            <h2>Mina uppgifter</h2>
+        </article>
         <section class="profile-card">
             <h2>Namn:</h2>
             <input placeholder="Robin Göransson">
@@ -43,75 +47,91 @@
 
         </section>
         <article class="title">
-            <h1 class="sub-title">Pågående bokningar</h1>
+            <h2>Pågående bokningar</h2>
         </article>
         <section class="cards">
             <article class="card">
-                <div class="center-bitch">
-                    <img class="big-product-picture" src="/Img/fogsvansen.png">
+                <div class="layout-center">
+                    <img class="product-picture" src="/Img/fogsvansen.png">
                 </div>
-                <h2 class="header__productname">Fogsvans 550 mm</h2>
+                <h2 class="product-name">Fogsvans 550 mm</h2>
                 <div class="dates">
-                    <p class="pick-up">Upphämtning: 2024-02-23</p> <p class="pick-up-date"> Kl 18.00</p></div>
-                    <div class="dates"><p class="return">Återlämning: 2024-03-23 </p> 
-                        <p class="return-date"> Kl 18.00</p></div>
-            </article>
-            <article class="buttons">
-                <a class="action-btn confirm" href="/HTML/kvitto.html">Hämta</a>
-                <a class="action-btn cancel" href="/HTML/kvitto.html">Avbryt</a>
-            </article>
-            <article class="card">
-                <div class="center-bitch">
-                    <img src="/Img/bosch borr.webp">
+                    <p class="pick-up">Upphämtning: 2024-02-23</p>
+                    <p class="pick-up-date"> Kl 18.00</p>
                 </div>
-                <h2 class="header__productname">Slagborrmaskin EasyImpact 600 230 V 600 W</h2>
                 <div class="dates">
-                <p class="pick-up">Upphämtning: 2024-02-23</p> <p class="pick-up-date"> Kl 18.00</p></div>
-                <div class="dates"><p class="return">Återlämning: 2024-03-23 </p> 
-                    <p class="return-date"> Kl 18.00</p></div>
-         
+                    <p class="return">Återlämning: 2024-03-23 </p>
+                    <p class="return-date"> Kl 18.00</p>
+                </div>
+                <article class="buttons">
+                    <a class="action-btn confirm" href="/HTML/kvitto.html">Hämta</a>
+                    <a class="action-btn cancel" href="/HTML/kvitto.html">Avbryt</a>
+                </article>
             </article>
 
-            <article class="buttons">
-                <a class="action-btn confirm" href="/HTML/kvitto.html">Hämta</a>
-                <a class="action-btn cancel" href="/HTML/kvitto.html">Avbryt</a>
+            <article class="card">
+                <div class="layout-center">
+                    <img src="/Img/bosch borr.webp">
+                </div>
+                <h2 class="product-name">Slagborrmaskin EasyImpact 600 230 V 600 W</h2>
+                <div class="dates">
+                    <p class="pick-up">Upphämtning: 2024-02-23</p>
+                    <p class="pick-up-date"> Kl 18.00</p>
+                </div>
+                <div class="dates">
+                    <p class="return">Återlämning: 2024-03-23 </p>
+                    <p class="return-date"> Kl 18.00</p>
+                </div>
+
+                <article class="buttons">
+                    <a class="action-btn confirm" href="/HTML/kvitto.html">Hämta</a>
+                    <a class="action-btn cancel" href="/HTML/kvitto.html">Avbryt</a>
+                </article>
             </article>
+
 
         </section>
 
         <article class="title">
-            <h1 class="sub-title">Hämtade</h1>
+            <h2>Hämtade</h2>
         </article>
         <article class="card">
-            <div class="center-bitch">
-            <img src="/Img/skruvdragare.webp">
-        </div>
-            <h2 class="header__productname">Borstlös skruvdragare med två batterier RDD18C-2C40S 54 Nm 4,0 Ah 18 V</h2>
-            <div class="status"><p class="status__text">Tillgänglig:</p> <p class="status__no">NEJ</p></div>
+            <div class="layout-center">
+                <img src="/Img/skruvdragare.webp">
+            </div>
+            <h2 class="product-name">Borstlös skruvdragare med två batterier RDD18C-2C40S 54 Nm 4,0 Ah 18 V</h2>
+            <div class="status">
+                <p class="status__text">Tillgänglig:</p>
+                <p class="status__no">NEJ</p>
+            </div>
             <p class="return-date deadline">Åter: 2024-03-01 kl: 18.00</p>
-            <div class="center-bitch">
-            <button class="action-btn reserved">Lämna tillbaka</button>
-        </div>
+            <div class="layout-center">
+                <button class="action-btn return-btn">Lämna tillbaka</button>
+            </div>
         </article>
         <article class="title">
-            <h1 class="sub-title">Historik</h1>
+            <h2>Historik</h2>
         </article>
         <section class="cards">
             <article class="card">
-                <div class="center-bitch">
-                <img class="big-product-picture" src="/Img/fogsvansen.png">
-            </div>
-                <h2 class="header__productname">Fogsvans 550 mm</h2>
-                <div class="status"><p class="status__text">Tillgänglig:</p> <p class="status__yes">Ja</p></div>
+                <div class="layout-center">
+                    <img class="product-picture" src="/Img/fogsvansen.png">
+                </div>
+                <h2 class="product-name">Fogsvans 550 mm</h2>
+                <div class="status">
+                    <p class="status__text">Tillgänglig:</p>
+                    <p class="status__yes">Ja</p>
+                </div>
                 <p>Återlämnad: 2024-01-23</p>
-                <div class="center-bitch">
-                <button class="action-btn book">Boka igen</button>
-            </div>
+                <div class="layout-center">
+                    <button class="action-btn book">Boka igen</button>
+                </div>
             </article>
-<footer>
+            <footer>
 
-</footer>
+            </footer>
     </main>
 
 </body>
+
 </html>

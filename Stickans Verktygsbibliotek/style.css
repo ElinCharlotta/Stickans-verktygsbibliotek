@@ -5,15 +5,15 @@
     --accent-color-light: #5CBACC;
     --dark-gray-color: #241C15;
     --light-text-color: #91784f;
-    --screaming-red-color: #FF0000;
-    --yes-green-color: #20EF20;
+    --screaming-red-color: #DA4141;
+    --yes-green-color: #98FD98;
 }
+
 * {
     box-sizing: border-box;
 }
 
 body {
-
     width: 100vw;
     height: 100vh;
     margin: 0;
@@ -22,12 +22,9 @@ body {
 }
 
 main {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    margin-left:auto;
+    max-width: 400px;
     display: grid;
-    grid-template-columns:430px;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .header-page {
@@ -49,9 +46,10 @@ main {
 }
 
 .profile-card {
+ 
     height: fit-content;
     margin: 1rem;
-    border: 0.2px solid #120B2A;
+    border: 0.2px solid var(--primary-color);
     padding: 1rem 2rem;
     border-radius: 0.2rem;
 
@@ -75,9 +73,10 @@ main {
 
     & h2 {
         margin-bottom: 0.5rem;
-        color: #5CBACC;
+        color: var(--accent-color-light);
     }
-    & .information-text{
+
+    & .information-text {
         margin-top: 2rem;
     }
 }
@@ -100,4 +99,3 @@ main {
 .deadline {
     margin-left: 0;
 }
-
