@@ -66,8 +66,9 @@ main {
     align-items: center;
 }
 
-
-
+.action-btn:active{
+    background-color:#5cb9ccca;
+}
 
 .receipt {
     margin: 0rem 2rem 0rem 2rem;

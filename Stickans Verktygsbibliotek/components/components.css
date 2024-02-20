@@ -149,9 +149,7 @@ p {
 }
 
 
-.action-btn:active{
-    background-color:#5cb9ccca;
-}
+
 
 .reserved.action-btn{
     background-color: var(--secondary-color);
